@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Wifi disconnect
+  datasource:
+    #url: jdbc:h2:mem:testdb
+    url: jdbc:h2:file:C:/Microservices/wifi-disconnect-db/src/main/resources/data/wifi_disconnect_db;AUTO_SERVER=true
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  h2:
+    console.enabled: true
+  properties:
+    hibernate.format_sql: true
+
+server:
+  port : 9090

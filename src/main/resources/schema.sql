@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS WIFI_DISCONNECT;
+
+CREATE TABLE WIFI_DISCONNECT (id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                              ACTION VARCHAR(255) NOT NULL,
+                              BILLING_ACCOUNT_CODE VARCHAR(255) NOT NULL,
+                              CUSTOMER_ACCOUNT_CODE VARCHAR(255) NOT NULL,
+                              SERVICE_ID VARCHAR(255) NOT NULL,
+                              WORKFLOW VARCHAR(255) NOT NULL
+);
